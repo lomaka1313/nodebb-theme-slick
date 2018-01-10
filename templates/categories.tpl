@@ -10,23 +10,26 @@
         <div class="col-md-8 col-xs-12">
             <div class="category-info">
                 <div class="category-info-content">
-                    <!-- IF !categories.image -->
-                    <div class="category-icon">
-                        <i class="fa fa-fw {categories.image}"></i>
-                    </div>
-                    <!-- ELSE -->
-                    <div class="category-icon">
-                        <div
-                                id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
-                                title="{categories.description}"
-                                style="
-                                        <!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
-                                        <!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
-                                        "
-                        ></div>
-                    </div>
-                    <!-- ENDIF !categories.backgroundImage -->
-                    <a class="category-title" href="{config.relative_path}/category/{categories.slug}" title="{categories.name}">{categories.name}</a>
+                    <a class="category-title" href="{config.relative_path}/category/{categories.slug}" title="{categories.name}">
+
+                        <!-- IF !categories.image -->
+                        <div class="category-icon">
+                            <i class="fa fa-fw {categories.icon}"></i>
+                        </div>
+                        <!-- ELSE -->
+                        <div class="category-icon">
+                            <div
+                                    id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
+                                    title="{categories.description}"
+                                    style="
+                                            <!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
+                                            <!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+                                            "
+                            ></div>
+                        </div>
+                        <!-- ENDIF !categories.backgroundImage -->
+                        {categories.name}
+                    </a>
 
                     <div class="category-description">
                         {categories.descriptionParsed}
