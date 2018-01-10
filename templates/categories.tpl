@@ -10,7 +10,7 @@
         <div class="col-md-8 col-xs-12">
             <div class="category-info">
                 <div class="category-info-content">
-                    <!-- IF !categories.backgroundImage -->
+                    <!-- IF !categories.image -->
                     <div class="category-icon">
                         <i class="fa fa-fw {categories.image}"></i>
                     </div>
