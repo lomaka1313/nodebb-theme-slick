@@ -1,5 +1,5 @@
 {
-  "name": "nodebb-theme-slick",
+  "name": "nodebb-theme-slick-forked-lomaka",
   "version": "1.1.3",
   "nbbpm": {
     "compatibility": "^1.7.1"
@@ -8,7 +8,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pichalite/nodebb-theme-slick.git"
+    "url": "git+https://github.com/lomaka1313/nodebb-theme-slick.git"
   },
   "keywords": [
     "nodebb",
@@ -17,16 +17,16 @@
     "themes"
   ],
   "author": {
-    "name": "pichalite",
-    "email": "pichalite.com@gmail.com"
+    "name": "lomaka",
+    "email": "lomaka17@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/pichalite/nodebb-theme-slick/issues"
+    "url": "https://github.com/lomaka1313/nodebb-theme-slick/issues"
   },
   "maintainers": [
     {
-      "name": "pichalite",
-      "email": "pichalite.com@gmail.com"
+      "name": "lomaka",
+      "email": "lomaka17@gmail.com"
     }
   ]
 }

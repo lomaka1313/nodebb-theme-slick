@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-theme-slick",
+    "id": "nodebb-theme-slick-forked-lomaka",
     "name": "Slick theme",
     "description": "Slick theme for NodeBB",
-    "url": "https://github.com/pichalite/nodebb-theme-slick",
+    "url": "https://github.com/lomaka1313/nodebb-theme-slick",
     "screenshot": "screenshot.png"
 }

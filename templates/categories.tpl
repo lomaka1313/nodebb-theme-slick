@@ -10,9 +10,22 @@
         <div class="col-md-8 col-xs-12">
             <div class="category-info">
                 <div class="category-info-content">
+                    <!-- IF !categories.backgroundImage -->
                     <div class="category-icon">
-                        <i class="fa fa-fw {categories.icon}"></i>
+                        <i class="fa fa-fw {categories.image}"></i>
                     </div>
+                    <!-- ELSE -->
+                    <div class="category-icon">
+                        <div
+                                id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
+                                title="{categories.description}"
+                                style="
+                                        <!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
+                                        <!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+                                        "
+                        ></div>
+                    </div>
+                    <!-- ENDIF !categories.backgroundImage -->
                     <a class="category-title" href="{config.relative_path}/category/{categories.slug}" title="{categories.name}">{categories.name}</a>
 
                     <div class="category-description">
@@ -24,7 +37,19 @@
                 <div class="subcategories">
                     <!-- BEGIN categories.children -->
                     <div class="subcategory">
-                        <i class="fa fa-fw {categories.children.icon} subcategory-icon"></i>
+
+                        <!-- IF !categories.children..backgroundImage -->
+                        <i class="fa fa-fw {categories.children.image}"></i>
+                        <!-- ELSE -->
+                            <div
+                                    id="category-{categories.children.cid}" class="category-header category-header-image-{categories.children.imageClass}"
+                                    title="{categories.children.description}"
+                                    style="
+                                            <!-- IF categories.children.backgroundImage -->background-image: url({categories.children.backgroundImage});<!-- ENDIF categories.children.backgroundImage -->
+                                            <!-- IF categories.children.bgColor -->background-color: {categories.children.bgColor};<!-- ENDIF categories.children.bgColor -->
+                                            "
+                            ></div>
+                        <!-- ENDIF !categories.children.backgroundImage -->
                         <a class="subcategory-title" href="{config.relative_path}/category/{categories.children.slug}" title="{categories.children.name}">{categories.children.name}</a>
                     </div>
                     <!-- END categories.children -->
